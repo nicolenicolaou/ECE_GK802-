@@ -11,7 +11,7 @@ def more(text):
             if reply == 'n':
                 break
                 
-url = 'http://python.org/'
+url = input("give a url: ")  
 
 with requests.get(url) as response:  # το αντικείμενο response
     
