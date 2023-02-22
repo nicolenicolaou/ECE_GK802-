@@ -1,6 +1,6 @@
 #1η εργαστηριακή ασκηση 
-import time
 import requests  # εισαγωγή της βιβλιοθήκης
+import time
 
 def more(text):
     count = 0
@@ -12,7 +12,7 @@ def more(text):
             if reply == 'n':
                 break
 
-url = 'http://python.org/'  # προσδιορισμός του url
+url = input("give a url: ")    # προσδιορισμός του url
 
 with requests.get(url) as response:  # το αντικείμενο response
     
