@@ -1,4 +1,3 @@
-import time
 import requests  # εισαγωγή της βιβλιοθήκης
 
 def more(text):
@@ -10,20 +9,9 @@ def more(text):
             reply = input('Show more (y/n)? ')
             if reply == 'n':
                 break
-                
-url = input("give a url: ")  
+
+url = 'http://python.org/'  # προσδιορισμός του url
 
 with requests.get(url) as response:  # το αντικείμενο response
-    
     html = response.text
     more(html)
-    
-    #erotima a
-    hdrs = response.headers
-    for key,value in hdrs.items():
-        if key=="Server": 
-            print("{:30s} {}".format(key,value))
-
-    #erotimata b,c 
-    for key,value in enumerate(response.cookies): 
-        print("{} {}".format(key,int(value.expires - time.time())/86400))
