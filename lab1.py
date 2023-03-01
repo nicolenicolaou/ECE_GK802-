@@ -13,9 +13,9 @@ def more(text):
             if reply == 'n':
                 break
 
-url = input("give a url: ")    # προσδιορισμός του url
+url = input("give a url: ")    #προσδιορισμός του url
 
-with requests.get(url) as response:  # το αντικείμενο response
+with requests.get(url) as response:  #το αντικείμενο response
     
     html = response.text
     more(html)
