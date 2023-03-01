@@ -1,5 +1,5 @@
 #1η εργαστηριακή ασκηση 
-# εισαγωγή απαραίτητων βιβλιοθηκών
+#εισαγωγή απαραίτητων βιβλιοθηκών
 import requests  
 from datetime import datetime as dt
 
